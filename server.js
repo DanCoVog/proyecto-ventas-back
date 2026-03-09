@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Conexión a MongoDB Atlas o local
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://cafeMemoria:kirito123@trabajo-cafe.fihzlsx.mongodb.net/cafe-memoria?retryWrites=true&w=majority';
+const MONGODB_URL = process.env.MONGODB_URL || 'mongodb+srv://cafeMemoria:kirito123@trabajo-cafe.fihzlsx.mongodb.net/';
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
